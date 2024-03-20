@@ -1,0 +1,297 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+
+nav{
+    width: 100%;
+    height: 80px;
+    background-color: #666;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.logo{
+  width: 70px;
+  margin-top: 5px;
+}
+
+.nav_links li{
+    display: inline-block;
+    margin: 0 16px;
+}
+
+.nav_links li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 0;
+    position: relative;
+    font-family: 'roboto', sans-serif;
+    font-size: 18px;
+
+}
+
+.nav_links li a::after{
+    content: '';
+    background: #ff3d00;
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s;
+}
+
+.nav_links li a:hover::after{
+    width: 100%;
+}
+
+
+/*------Nosotros-----*/
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 65px auto; 
+}
+
+.hero__content{
+    width: 600px;
+    margin: 0 25px;
+}
+
+.hero__content h2{
+ font-size: 38px;
+ margin-bottom: 20px;
+ color:#333;
+}
+
+.hero__content p{
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color:#666;
+   }
+
+.hero__img{
+   width: 300px;
+   margin: auto;
+}
+
+.hero__img img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.banner{
+ margin-top: 90px;
+ margin-bottom: 90px;
+}
+.banner img{
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+
+/*----Hobbies---*/
+
+.hobbie{
+    width: 80%;
+    padding: 10px 0;
+    margin: 0 auto;
+}
+
+.hobbie h2{
+    font-size: 30px;
+    font-family: 'roboto', sans-serif;
+    color: chocolate;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+.hobbie__box{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.hobbie__card{
+    width: 330px;
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+.hobbie__img{
+    width: 100%;
+    height: 245px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.hobbie__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+}
+
+.hobbie__img img:hover{
+    transform: scale(1.1);
+}
+
+.hobbie__info h2{
+   width: 60%;
+   text-align: center; 
+   margin: 10px auto 10px auto;
+   font-size: 18px;
+   color: blue;
+}
+
+.hobbie__info p{
+    text-align: justify; 
+    margin-top: 10px;
+    line-height: 1.2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+ }
+
+/*------------FOOTER------------*/
+
+footer{
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    background-color: #ededed;
+    padding: 40px 0;
+}
+
+.footer_social{
+    text-align: center;
+    padding-bottom: 25px;
+    color:#4b4c4d;
+}
+
+.footer_social a{
+   font-size: 24px;
+   color: inherit;
+   border: 1px solid #ccc;
+   width: 40px;
+   height: 40px;
+   line-height: 38px;
+   display: inline-block;
+   border-radius: 50%;
+   margin: 0 7px;
+   opacity: 0.75;
+}
+
+.footer_social a:hover{
+   opacity: 0.95;
+}
+
+.footer_list{
+   margin-top: 0;
+   padding: 0;
+   font-size: 18px;
+   line-height: 1.6;
+   margin-bottom: 0;
+   text-align: center;
+}
+
+.footer_list li{
+  display: inline-block;
+  padding: 0 15px;
+
+}
+
+.footer_list li:hover{
+    color: #666;
+}
+
+.footer_list a{
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.7;
+    font-weight: 500;
+}
+
+.footer_parraf{
+   margin-top: 15px;
+   text-align: center;
+   font-size: 13px;
+   color: #666;
+}
+
+@media (max-width: 768px) {
+  nav{
+    padding: 0 30px;
+  }
+  
+  .nav_links{
+    height: 0;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background: #11101b;
+  }
+
+  .nav_links.active{
+    height: 380px;
+  }
+  
+  .nav_links li{
+   display: block;
+   width: fit-content;
+   margin: 40px auto 0 auto;
+   text-align: center;
+  }
+
+  .hamburguer{
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburguer .line{
+    width: 30px;
+    height: 3px;
+    background: #fefefe;
+    margin: 6px 0;
+  }
+
+  .hero{
+    flex-direction: column;
+  }
+  
+  .hero__content{
+   text-align: center;
+  }
+
+  .hero__content, .hero__img{
+    width: 100%;
+    margin: 0;
+  }
+
+  .banner img{
+    height: auto;
+  }
+
+  .hobbie__box{
+    grid-template-columns: 1fr;
+  }
+
+  .hobbie__card{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+

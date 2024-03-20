@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/99c274713b.js" crossorigin="anonymous"></script>
+    <title>Pagina 1</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="/logo.png" alt="logo" class="logo">
+
+            <div class="hamburguer">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+
+            <ul class="nav_links">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de mi</a></li>
+                <li><a href="#">Hobbies</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="container">
+            <div class="hero">
+                <div class="hero__content">
+                    <h2>Acerca de mi</h2>
+                    <p>Me llamo Jose Andre, nací en Lima y vivo en Surco. Me gusta el helado y salir a pasear en días de
+                        sol, tambien me gusta mucho la playa</p>
+                    <p>Me encantaría aprender a programar para poder ayudar a las personas a mostrar lo que hacen,
+                        tambien me gustaria aprender a dibujar manga"</p>
+                </div>
+
+                <div class="hero__img">
+                    <img src="/imagen.jpg" alt="imagen personal">
+                </div>
+            </div>
+
+            <div class="banner">
+                <img src="/carrusel.jpg" alt="amigos" class="banner__img">
+            </div>
+        </section>
+
+        <!------------Hobbies----------->
+
+        <section class="hobbie">
+            <h2>Mis Hobbies</h2>
+
+            <div class="hobbie__box">
+                <div class="hobbie__card">
+
+                    <div class="hobbie__img">
+                        <img src="/titanes.jpg" alt="dibujos">
+                    </div>
+
+                    <div class="hobbie__info">
+                        <h2>Caricaturas</h2>
+
+                        <p>Me encanta mucho los dibujos que pasan en el canal de Cartoon Network, sobre todo los
+                            "Titanes en Accion"
+                            soy fanatico de sus historias, me causan risa y me divierten bastante.</p>
+                    </div>
+
+                </div>
+
+                <div class="hobbie__card">
+
+                    <div class="hobbie__img">
+                        <img src="/pollo.jpg" alt="pollo a la brasa">
+                    </div>
+
+                    <div class="hobbie__info">
+                        <h2>Pollo Frito</h2>
+
+                        <p>Uno de mis platos preferidos es el pollo a la brasa, creo que por mi fuera comeria todo los
+                            dias,
+                            me gusta mucho el pollo del Norkys, KFC</p>
+                    </div>
+
+                </div>
+
+                <div class="hobbie__card">
+
+                    <div class="hobbie__img">
+                        <img src="/dibujar.jpg" alt="dibujar">
+                    </div>
+
+                    <div class="hobbie__info">
+                        <h2>Dibujar</h2>
+
+                        <p>Tambien me encanta mucho el dibujar, pintar, colorear, me gusta dibujar los comerciales que
+                            veo
+                            por youtube, mi papa me dice que soy un buen dibujante.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script>
+        hamburguer = document.querySelector(".hamburguer");
+        hamburguer.onclick = function () {
+            nav_links = document.querySelector(".nav_links");
+            nav_links.classList.toggle("active");
+        }
+    </script>
+
+    <footer>
+        <div class="footer_social">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+
+        <ul class="footer_list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Acerca de mi</a></li>
+            <li><a href="#">Hobbies</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+
+        <p class="footer_parraf">
+            Jose Andre &copy; 2024
+        </p>
+    </footer>
+</body>
+
+</html>
